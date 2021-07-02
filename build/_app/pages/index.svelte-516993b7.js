@@ -1,0 +1,1 @@
+import{S as s,i as e,s as t,t as a,g as i,f as n,G as d,d as r}from"../chunks/vendor-d212defe.js";function o(s){let e;return{c(){e=a("This is the index page")},l(s){e=i(s,"This is the index page")},m(s,t){n(s,e,t)},p:d,i:d,o:d,d(s){s&&r(e)}}}export default class extends s{constructor(s){super(),e(this,s,null,o,t,{})}}

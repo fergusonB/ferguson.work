@@ -1,1 +1,1 @@
-<button class="bg-red-100 rounded-lg hover:bg-purple-700">seems pretty instant</button>
+This is the index page

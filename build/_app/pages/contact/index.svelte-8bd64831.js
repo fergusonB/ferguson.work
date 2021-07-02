@@ -1,0 +1,1 @@
+import{S as s,i as t,s as a,t as c,g as e,f as n,G as o,d as r}from"../../chunks/vendor-d212defe.js";function d(s){let t;return{c(){t=c("contact")},l(s){t=e(s,"contact")},m(s,a){n(s,t,a)},p:o,i:o,o:o,d(s){s&&r(t)}}}export default class extends s{constructor(s){super(),t(this,s,null,d,a,{})}}
