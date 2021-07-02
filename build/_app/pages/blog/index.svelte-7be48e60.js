@@ -1,0 +1,1 @@
+import{S as s,i as e,s as t,t as a,g as n,f as o,E as r,d as u}from"../../chunks/vendor-bd31e268.js";function l(s){let e;return{c(){e=a("blog menu")},l(s){e=n(s,"blog menu")},m(s,t){o(s,e,t)},p:r,i:r,o:r,d(s){s&&u(e)}}}export default class extends s{constructor(s){super(),e(this,s,null,l,t,{})}}
