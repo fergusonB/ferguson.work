@@ -7,7 +7,8 @@
 <div class="z-10">
 	<Menu />
 
-	<slot />
+	<slot></slot>
+
 </div>
 <div class="stars z-0 fixed" />
 <style>

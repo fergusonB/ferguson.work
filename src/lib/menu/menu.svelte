@@ -9,7 +9,7 @@
 
 </script>
 
-<nav class="flex justify-around bg-gray-200 p-2" >
+<nav class="flex justify-around bg-gray-200 p-2 rounded-xl rounded-t-none" >
     {#each buttons as button}
          <Button {button} /> 
     {/each}
