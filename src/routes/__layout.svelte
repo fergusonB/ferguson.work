@@ -12,6 +12,10 @@
 </div>
 <div class="stars z-0 fixed" />
 <style>
+	:global(body){
+		background-color: #121212;
+	}
+
 	.stars{
 		pointer-events: none;
 		width: 400vw;
