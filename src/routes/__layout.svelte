@@ -1,14 +1,30 @@
+<script context="module">
+    export async function load({page}){
+		const path = page.path.split('/').slice(1)
+        return {props:{path}}
+
+    }
+
+</script>
+
 <script>
 	import '../app.postcss';
 	import Menu from '$lib/menu/menu.svelte';
+	import PWD from '$lib/pwd.svelte';
+
+	export let path
 </script>
 
 
 <div class="z-10">
 	<Menu />
 
-	<slot></slot>
+	<PWD {path}></PWD>
 
+	<div>
+		<slot></slot>
+	</div>
+	
 </div>
 <div class="stars z-0 fixed" />
 <style>
