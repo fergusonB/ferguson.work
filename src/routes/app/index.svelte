@@ -1,3 +1,9 @@
-Applications menu
+<script>
+    import BackPanel from '$lib/menu/back_panel.svelte';
 
-dont style here, use layout
+</script>
+
+
+<BackPanel>
+    content
+</BackPanel>
