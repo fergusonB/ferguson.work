@@ -6,8 +6,8 @@ export let items
         <a href={item.href}>
              <div class="m-3 bg-white rounded-md text-center">
                  <div class="font-bold">{item.title}</div>
-                 <img src={item.image} alt={item.title + item.description}>
-                 <span class="-m-10">{item.description}</span>
+                 <img src={item.image} alt={item.title + ' ' + item.description}>
+                 <span class="overflow-hidden">{item.description}</span>
              </div>
             </a>
         {/each}
