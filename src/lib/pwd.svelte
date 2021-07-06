@@ -4,7 +4,7 @@
 
 
 </script>
-<div class="m-2 rounded-md bg-white bg-opacity-50">
+<div class="m-2 rounded-md bg-white bg-opacity-50 p-1 inline-block">
 {#each path as item,i}
     
 
