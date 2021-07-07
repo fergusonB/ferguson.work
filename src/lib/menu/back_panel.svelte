@@ -1,7 +1,8 @@
 <script>
+import Panel from '$lib/rear-white-panel.svelte'
 export let items
 </script>
-    <div class="p-3  m-auto rounded-md bg-white w-11/12 md:w-2/3 bg-opacity-70 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+    <Panel>
         {#each items as item}
         <a href={item.href}>
              <div class="m-3 bg-white rounded-md text-center drop-shadow-lg transition-opacity  duration-200 opacity-95 hover:opacity-100">
@@ -11,6 +12,6 @@ export let items
              </div>
             </a>
         {/each}
-    </div>
+    </Panel>
     
 

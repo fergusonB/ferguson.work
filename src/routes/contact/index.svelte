@@ -1,4 +1,5 @@
 <script>
+    import Panel from '$lib/rear-white-panel.svelte'
     let contactInfo = [
         {place:'GitHub', logo:'static/menu/contact/GitHub_Logo.png',link:'https://github.com/fergusonB'},
         {place:'LinkedIn', logo:'static/menu/contact/LI-Logo.png',link:'https://www.linkedin.com/in/brendenferguson/'}
@@ -11,7 +12,8 @@
     <title>Contact</title>
 </svelte:head>
 
-<div  class="p-3 m-auto rounded-md bg-white w-11/12  md:w-2/3 bg-opacity-75 ">
+<Panel>
+
 
 
 {#each contactInfo as contact}
@@ -22,4 +24,4 @@
     </a> 
 {/each}
 
-</div>
+</Panel>
