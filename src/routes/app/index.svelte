@@ -7,5 +7,8 @@
 ]
 </script>
 
+<svelte:head>
+    <title>Applications</title>
+</svelte:head>
 
 <BackPanel {items}/>
