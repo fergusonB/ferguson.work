@@ -1,5 +1,5 @@
 <script>
-    import BackPanel from '$lib/menu/back_panel.svelte';
+    import MenuPanel from '$lib/menu/menu_panel.svelte';
     let items = [
     {title:'First app', image:'/menu/app/jungle.jpg',description:'this is an app'},
     {title:'second app', image:'/menu/app/jungle.jpg',description:'this is an app another'},
@@ -11,4 +11,4 @@
     <title>Blog</title>
 </svelte:head>
 
-<BackPanel {items}/>
+<MenuPanel {items}/>
