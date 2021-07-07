@@ -12,7 +12,7 @@
     <title>Contact</title>
 </svelte:head>
 
-<Panel grid={false}>
+<Panel>
 
 
 
