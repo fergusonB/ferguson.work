@@ -3,6 +3,12 @@
     
 </script>
 
+<span class=" m-auto ">
 
-    <a sveltekit:prefetch class="transition bg-white p-1 m-auto rounded-md hover:scale-125 shadow-md hover:shadow-xl" 
-    href={button.link}>{button.name}</a>
+    <a sveltekit:prefetch 
+    href={button.link}>
+    <img class="transition  m-auto bg-white rounded-md p-2 shadow-md hover:scale-125 hover:shadow-xl" src={button.icon} alt={button.name}>
+ 
+</a> 
+{button.name}
+</span>
