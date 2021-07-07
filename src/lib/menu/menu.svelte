@@ -10,7 +10,7 @@
 
 </script>
 
-<nav class="flex justify-around  p-2 rounded-xl rounded-t-none bg-white bg-opacity-50" >
+<nav class="mr-2 ml-2 flex justify-around  p-2 rounded-xl rounded-t-none bg-white bg-opacity-50" >
     {#each buttons as button}
          <Button {button} /> 
     {/each}
