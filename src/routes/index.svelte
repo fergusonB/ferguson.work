@@ -6,6 +6,6 @@
 	<title>Home</title>
 </svelte:head>
 
-<Panel>
-	<div class="flex">Brenden ferguson</div>
+<Panel grid={false}>
+	Brenden Ferguson
 </Panel>
