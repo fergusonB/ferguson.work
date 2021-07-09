@@ -1,8 +1,8 @@
 <script>
     import Panel from '$lib/rear-white-panel.svelte'
     let contactInfo = [
-        {place:'GitHub', logo:'static/menu/contact/GitHub_Logo.png',link:'https://github.com/fergusonB'},
-        {place:'LinkedIn', logo:'static/menu/contact/LI-Logo.png',link:'https://www.linkedin.com/in/brendenferguson/'}
+        {place:'GitHub', logo:'/menu/contact/GitHub_Logo.png',link:'https://github.com/fergusonB'},
+        {place:'LinkedIn', logo:'/menu/contact/LI-Logo.png',link:'https://www.linkedin.com/in/brendenferguson/'}
     ]
 
 
