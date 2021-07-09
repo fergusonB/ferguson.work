@@ -1,17 +1,23 @@
-<svelte:head>
-    <title>
-        Welcome to the Site
-    </title>
-    <meta name="description" content="Detailed information on how I built this new website.">
-    
-</svelte:head>
 <script>
     import Panel from '$lib/rear-white-panel.svelte'
+
+    const title = "Welcome to the Site!"
+    const description = "Detailed information on how I built this new website."
+
 </script>
+
+<svelte:head>
+    <title>
+        {title}
+    </title>
+    <meta name="description" content={description}>
+    
+</svelte:head>
+
 <Panel>
 
 <article>
-    <h1>Welcome to the Site!</h1>
+    <h1>{title}</h1>
 
     <p>
         Hello and welcome to my new website. It's built with Sveltekit.
