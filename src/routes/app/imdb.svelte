@@ -457,12 +457,12 @@
 
 <Panel>
 
-<h1>IMDB Show Ratings</h1>
-<h2>This is a legacy application from my old website, if you find it's not working properly please reach out to me on GitHub.</h2>
+<h1 class="text-xl">IMDB Show Ratings</h1>
+<h2 class="font-bold">This is a legacy application from my old website, if you find it's not working properly please reach out to me on GitHub.</h2>
 
 <p>
     This takes output from my project
-    <a
+    <a class="underline"
         target="_blank"
         rel="preload"
         href="https://github.com/fergusonB/Puppeteer-IMDB-Scraper">
@@ -472,19 +472,14 @@
 <p>
     Please paste the contents from 'out.json' here and press go to generate a
     new chart.
-    <br />
-    Click
-    <a target="_blank" rel="preload" href="https://ferguson.work/api/imdb/">
-        here</a>
-    to see a Game of Thrones example.
-    <br />
+
 </p>
 <p>
-    <input type="text" on:click={() => (userData = '')} bind:value={userData} />
-    <button on:click={() => (data = JSON.parse(userData))}>Generate</button>
+    <input class="px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring" type="text" on:click={() => (userData = '')} bind:value={userData} />
+    <button class="bg-green-100 p-1 rounded-md" on:click={() => (data = JSON.parse(userData))}>Generate</button>
 </p>
 
-<div class="tableContainer">
+<div class="tableContainer m-1">
     {#each Object.keys(data) as season, i}
         <div in:fade class="season">
             <div class="seasonBox">
