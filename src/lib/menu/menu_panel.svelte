@@ -4,7 +4,7 @@ export let items
 </script>
     <Panel grid={true}>
         {#each items as item}
-        <a href={item.href}>
+        <a sveltekit:prefetch  href={item.href}>
              <div class="m-3 bg-white rounded-md text-center drop-shadow-lg transition-opacity  duration-200 opacity-95 hover:opacity-100">
                  <div class="font-bold">{item.title}</div>
                  <img src={item.image} alt={item.title + ' ' + item.description}>
