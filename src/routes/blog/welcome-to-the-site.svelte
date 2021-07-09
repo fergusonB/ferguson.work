@@ -5,6 +5,10 @@
     <meta name="description" content="Detailed information on how I built this new website.">
     
 </svelte:head>
+<script>
+    import Panel from '$lib/rear-white-panel.svelte'
+</script>
+<Panel>
 
 <article>
     <h1>Welcome to the Site!</h1>
@@ -16,3 +20,5 @@
 
 
 </article>
+
+</Panel>
