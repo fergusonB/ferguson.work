@@ -3,7 +3,6 @@
 
     const title = "Welcome to the Site!"
     const description = "Detailed information on how I built this new website."
-
 </script>
 
 <svelte:head>
