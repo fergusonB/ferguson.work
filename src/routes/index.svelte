@@ -7,5 +7,5 @@
 </svelte:head>
 
 <Panel>
-	Brenden Ferguson
+	This version of the site is brand new and not yet ready for use, check back in a few days.
 </Panel>
