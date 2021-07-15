@@ -4,15 +4,16 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Blog</title>
+		<title>
+		Linux Cheatsheet
+	</title><meta name="description" content="Personal linux cheatsheet, basic security, commands, tools I like." data-svelte="svelte-x8hgsm">
 
 		
 
 		<link rel="modulepreload" href="/./_app/start-bd606841.js">
 		<link rel="modulepreload" href="/./_app/chunks/vendor-66e0e850.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-92e4ae72.js">
-		<link rel="modulepreload" href="/./_app/pages/blog/index.svelte-0260e519.js">
-		<link rel="modulepreload" href="/./_app/chunks/menu_panel-5007259a.js">
+		<link rel="modulepreload" href="/./_app/pages/blog/linux-cheatsheet.svelte-09461dcb.js">
 		<link rel="modulepreload" href="/./_app/chunks/rear-white-panel-e24a3396.js">
 		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-e7853b8c.css">
@@ -32,11 +33,11 @@
 					error: null,
 					nodes: [
 						import("/./_app/pages/__layout.svelte-92e4ae72.js"),
-						import("/./_app/pages/blog/index.svelte-0260e519.js")
+						import("/./_app/pages/blog/linux-cheatsheet.svelte-09461dcb.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "/blog",
+						path: "/blog/linux-cheatsheet",
 						query: new URLSearchParams(""),
 						params: {}
 					}
@@ -58,14 +59,99 @@ Contact</span></nav>
    
    
  
+     →  <a href="/blog/linux-cheatsheet">LINUX-CHEATSHEET</a>
+   
+   
+ 
      </div>
 
 	<div>
 
-<div class="p-3  m-auto rounded-md bg-white w-11/12 md:w-2/3 bg-opacity-70"><div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 "><a class="transform transition hover:scale-105  focus:scale-105" sveltekit:prefetch href="/blog/linux-cheatsheet"><div class="m-3 bg-gradient-to-b from-white to-gray-300  rounded-md text-center drop-shadow-md "><div class="font-bold">Linux Cheatsheet</div>
-		<img class=" m-auto max-h-24" src="/blog/sveltekit.jpg" alt="Linux Cheatsheet Personal linux cheatsheet, basic security, commands, tools I like.">
-		<span class="overflow-hidden">Personal linux cheatsheet, basic security, commands, tools I like.</span></div>
-</a></div></div></div></div>
+<div class="p-3  m-auto rounded-md bg-white w-11/12 md:w-2/3 bg-opacity-70"><article class="ml-3"><h1 class="text-4xl underline mb-5">Linux Cheatsheet</h1>
+
+        <h2 class="text-3xl my-2">Table of Contents</h2>
+            <ol class="list-decimal ml-5 underline"><li><a href="#basic-security">Basic Security</a></li>
+                <li><a href="#useful-commands">Useful Commands</a></li>
+                <li><a href="#tools-i-like">Tools I Like</a></li></ol>
+
+
+
+
+<h2 id="basic-security" class="text-3xl my-2">Basic Security</h2>
+
+<h3 class="text-xl my-2">Automatic Updates</h3>
+
+<ul class="list-disc list-inside ml-2"><li>apt install unattended-upgrades</li>
+	<li>dpkg-reconfigure --priority=low unattended-upgrades</li></ul>
+<h3 class="text-xl my-2">Non-root user</h3>
+
+<ul class="list-disc list-inside ml-2"><li>adduser [user]</li>
+	<li>usermod -aG sudo [user]</li></ul>
+<h3 class="text-xl my-2">Keys</h3>
+
+<ul class="list-disc list-inside ml-2"><li>mkdir ~/.ssh</li>
+	<li>chmod 700 ~/.ssh</li>
+	<li>ssh-keygen -b [4096]</li>
+	<li>ssh-copy-id [user]@[ip]</li></ul>
+<h3 class="text-xl my-2">Harden SSH</h3>
+
+<ul class="list-disc list-inside ml-2"><li>sudo nano /etc/ssh/sshd_config</li>
+	<li>Port [22]</li>
+	<li>AddressFamily [inet]</li>
+	<li>PermitRootLogin [no]</li>
+	<li>PasswordAuthentication [no]</li></ul>
+<h3 class="text-xl my-2">Firewall</h3>
+
+<ul class="list-disc list-inside ml-2"><li>sudo apt install ufw</li>
+	<li>sudo ufw allow [port]</li>
+	<li>sudo ufw enable</li>
+	<li>sudo ufw status</li>
+	<li>netstat -rn show networks accessible via the vpn</li>
+	<li>sudo nano /etc/ufw/before.rules</li>
+	<li>-A ufw-before-input -p icmp --icmp-type echo-request -j DROP</li>
+	<li>reboot</li></ul>
+
+<h2 id="useful-commands" class="text-3xl">Useful Commands</h2>
+
+<h3 class="text-xl my-2">Service Scanning</h3>
+<table class="table-auto "><thead><tr><th>Command</th>
+			<th>Description</th></tr></thead>
+	<tbody><tr><td>nmap [ip] </td>
+			<td>run nmap</td></tr>
+		<tr><td>netcat [ip] [port] </td>
+			<td>get banner of open port</td></tr>
+		<tr><td>nmap -sV -sC -p- [ip] </td>
+			<td>run full port, service, version scan</td></tr>
+		<tr><td>smbclient -N -L \\\\<ip></ip></td>
+			<td>List SMB Shares</td></tr></tbody></table>
+
+<h3 class="text-xl my-2">Web Enumeration (parrot)</h3>
+<table class="table-auto"><thead><tr><th>Command</th>
+			<th>Description</th></tr></thead>
+	<tbody><tr><td>gobuster dir -u [ip] -w [list] </td>
+			<td>directory scan</td></tr>
+		<tr><td>gobuster dns -d [address]-w [list] </td>
+			<td>subdomain scan</td></tr>
+		<tr><td>curl -IL [ip] </td>
+			<td>get website banner</td></tr>
+		<tr><td>curl [ip]/robots.txt </td>
+			<td>potentially get some directories</td></tr></tbody></table>
+
+<h2 id="tools-i-like" class="text-3xl">Tools I Like</h2>
+
+<h3 class="text-xl my-2"><a href="http://httpie.org/" target="_blank" rel="nofollow">HTTPie</a></h3>
+
+<p>HTTPie is a command line HTTP client, a user-friendly cURL replacement.</p>
+<p></p>
+<h3 class="text-xl my-2"><a href="https://github.com/BurntSushi/ripgrep" target="_blank" rel="nofollow">Ripgrep</a></h3>
+<p>Ripgrep is a fast, efficient, and accurate grep alternative.</p>
+<p></p>
+<h3 class="text-xl my-2"><a href="https://github.com/sharkdp/bat" target="_blank" rel="nofollow">Bat</a></h3>
+<p>Cat clone with syntax highlighting</p>
+
+
+<h3 class="text-xl my-2"><a href="https://github.com/chubin/cheat.sh" target="_blank" rel="nofollow">Cheat.sh</a></h3>
+<p><code>curl cht.sh</code> for cheatsheets to almost anything in your terminal.</p></article></div></div></div>
 <div class="stars z-0 fixed svelte-191bc2b"></div>
 
 

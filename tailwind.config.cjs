@@ -6,7 +6,10 @@ const config = {
 	theme: {
 		extend: {},
 	},
-	plugins: [],
+	fontFamily:{
+		sans:["Cascadia Code Web","Menlo", "Monaco", "Consolas", "Courier New"],
+	},
+
 };
 
 module.exports = config;
