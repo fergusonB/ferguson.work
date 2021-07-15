@@ -5,6 +5,7 @@ const config = {
 	],
 	theme: {
 		extend: {},
+		
 	},
 	fontFamily:{
 		sans:["Cascadia Code Web","Menlo", "Monaco", "Consolas", "Courier New"],

@@ -11,6 +11,7 @@
 	import '../app.postcss';
 	import Menu from '$lib/menu/menu.svelte';
 	import PWD from '$lib/pwd.svelte';
+	import Footer from '$lib/menu/footer.svelte'
 
 	export let path
 </script>
@@ -24,12 +25,13 @@
 	<div>
 		<slot></slot>
 	</div>
+	<Footer />
 	
 </div>
 <div class="stars z-0 fixed" />
 <style>
-	:global(body){
-		background-color: #121212;
+	:global(html){
+		background-color:#121212;
 	}
 
 	.stars{
