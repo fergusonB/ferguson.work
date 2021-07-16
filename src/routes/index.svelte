@@ -63,7 +63,6 @@
 </div>
 
 <style>
-/* animation bounces up and down */
 #landing-bounce {
 	animation: bounce 1s infinite;
 	-webkit-animation: bounce 1s infinite;
