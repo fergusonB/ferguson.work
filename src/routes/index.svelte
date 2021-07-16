@@ -9,13 +9,14 @@
 </svelte:head>
 
 
-<div class="text-4xl text-center text-white">
-	<h1 id="name"> Brenden Ferguson</h1>
+
+<div class="text-4xl text-center text-white h-screen">
+	<div class="my-24" id="name"> Brenden Ferguson</div>
 	<div id="landing-bounce">V</div>
 </div>
 
 
-<div class="bg-blue-800 text-3xl text-white" id="education">
+<div class="bg-blue-800 text-3xl text-white h-screen" id="education">
 	<div>
 		<h2 class="font-bold">BA, Business Administration</h2>
 		<h3>California State University, Fullerton</h3>
@@ -26,7 +27,7 @@
 	</div>
 </div>
 
-<div class="text-black bg-white text-2xl" >
+<div class="text-black bg-gray-200 text-2xl h-screen" >
 	<div>
 		<img src="ferguson.png" alt="Ferguson enterprises">
 	</div>
@@ -36,7 +37,7 @@
 
 </div>
 
-<div class="bg-blue-800 text-3xl text-white">
+<div class="bg-blue-800 text-3xl text-white h-screen">
 	<div>
 		<p>
 			I have a passion for technology, especially web-related.
@@ -60,9 +61,6 @@
 
 	</div>
 </div>
-
-
-
 
 <style>
 /* animation bounces up and down */
