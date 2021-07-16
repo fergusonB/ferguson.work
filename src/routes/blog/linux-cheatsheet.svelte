@@ -3,6 +3,8 @@
 
 	const title = 'Linux Cheatsheet';
 	const description = 'Personal linux cheatsheet, basic security, commands, tools I like.';
+	//today's date
+	const date = 'July 16, 2021';
 
 </script>
 
@@ -16,6 +18,9 @@
 <Panel>
 	<article class="ml-3">
 		<h1 class="text-4xl underline mb-5">{title}</h1>
+
+		
+		<p class="text-sm text-gray-700">{date}</p>
 
         <h2 class="text-3xl my-2">Table of Contents</h2>
             <ol  class="list-decimal ml-5 underline">
