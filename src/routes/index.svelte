@@ -16,7 +16,7 @@
 </div>
 
 
-<div class="bg-blue-800 text-3xl text-white h-screen" id="education">
+<div class="bg-blue-800 bg-blue-800-2 text-3xl text-white h-screen" id="education">
 	<div>
 		<h2 class="font-bold">BA, Business Administration</h2>
 		<h3>California State University, Fullerton</h3>
@@ -27,17 +27,18 @@
 	</div>
 </div>
 
-<div class="text-black bg-gray-200 text-2xl h-screen" >
+<div class="bg-blue-800 text-white text-2xl h-screen" >
 	<div>
 		<img src="ferguson.png" alt="Ferguson enterprises">
 	</div>
 	<div>
 		<h2>Years of commercial sales experience at the largest plumbing wholesaler in the US.
 	</div>
+	
 
 </div>
 
-<div class="bg-blue-800 text-3xl text-white h-screen">
+<div class="bg-blue-800 bg-blue-800-3 text-3xl text-white h-screen">
 	<div>
 		<p>
 			I have a passion for technology, especially web-related.
@@ -78,6 +79,21 @@
 		transform: translateY(0);
 	}
 }
+/* #121212 rgb is */
+/* fades background between divs */
+.bg-blue-800-2 {
+	background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(0,0,0,0));
+	background-size: cover;
+	background-position: center;
+}
+.bg-blue-800-3 {
+	background-image: linear-gradient(to top, rgba(18,18,18,1), rgba(0,0,0,0));
+	background-size: cover;
+	background-position: center;
+}
+/* fades from 0,0,0 */
+
+
 
 
 
