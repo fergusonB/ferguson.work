@@ -1,7 +1,7 @@
-<footer class="flex flex-col md:flex-row items-center justify-center  text-sm py-3 text-white">
-		<div 
+<footer class="flex flex-row items-center justify-center  text-sm py-3 text-white">
+		<span 
 			>Brenden Ferguson © 2021
-        </div>
+</span>
 			<a href="https://github.com/fergusonB" target="_blank" class="text-white px-3"
 				><img
 					src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/github.svg"
