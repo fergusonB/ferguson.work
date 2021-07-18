@@ -1,4 +1,4 @@
-<footer class="flex flex-col md:flex-row items-center justify-center text-sm py-3 text-white">
+<footer class="flex flex-col md:flex-row items-center justify-center  text-sm py-3 text-white">
 		<div 
 			>Brenden Ferguson © 2021
         </div>

@@ -1,5 +1,14 @@
 <script>
 
+import {onMount} from 'svelte'
+
+onMount(() => {
+	document.getElementById('top').onclick = function() {
+	window.scrollTo(0,0);
+	}
+})
+
+
 
 
 </script>
@@ -16,7 +25,7 @@
 </div>
 
 
-<div class="bg-blue-800 bg-blue-800-2 text-3xl text-white h-screen" id="education">
+<div class="bg-blue-800 bg-blue-800-2 text-3xl text-white h-screen flex justify-around p-3" id="education">
 	<div>
 		<h2 class="font-bold">BA, Business Administration</h2>
 		<h3>California State University, Fullerton</h3>
@@ -27,41 +36,39 @@
 	</div>
 </div>
 
-<div class="bg-blue-800 text-white text-2xl h-screen" >
+<div class="bg-blue-800 text-white text-2xl h-screen flex justify-around p-3" >
 	<div>
-		<img src="ferguson.png" alt="Ferguson enterprises">
+		<img class="bg-white rounded-lg p-3" src="ferguson.png" alt="Ferguson enterprises">
 	</div>
-	<div>
-		<h2>Years of commercial sales experience at the largest plumbing wholesaler in the US.
+	<div class="p-3">
+		<h2>Three years experience in sales and account management at the largest plumbing wholesaler in the U.S.
 	</div>
 	
 
 </div>
 
-<div class="bg-blue-800 bg-blue-800-3 text-3xl text-white h-screen">
-	<div>
-		<p>
-			I have a passion for technology, especially web-related.
-			<br>
-			While I am largely self-taught through projects, I have completed Harvard's CS50 course as well as algorithm & data structure training at Algoexpert, and even took a handful of computer science courses while at CSUF.
-		</p>
-	</div>
-	<div>
-	
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/svelte.svg" alt="Svelte">
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/javascript.svg" alt="Javascript">
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/css3.svg" alt="CSS">	
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/html5.svg" alt="HTML">
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/rust.svg" alt="Rust">
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/python.svg" alt="Python">
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/git.svg" alt="Git">
-		<img class="h-3" src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linux.svg" alt="Linux">
+<div class="bg-blue-800 bg-blue-800-3 text-2xl p-3 text-white flex justify-center ">
+
+	<div id="icons" >
+
+		<img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/svelte.svg" alt="Svelte">
+		<img    src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/javascript.svg" alt="Javascript">
+		<img   src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/css3.svg" alt="CSS">	
+		<img   src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/html5.svg" alt="HTML">
+		<img  src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/rust.svg" alt="Rust">
+		<img  src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/python.svg" alt="Python">
+		<img src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/git.svg" alt="Git">
+		<img  src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linux.svg" alt="Linux">
 
 	
 
 
 	</div>
 </div>
+
+<button class="bg-white text-black px-2 text-2xl text-center rounded-md" id="top">
+	^
+</button>
 
 <style>
 #landing-bounce {
@@ -79,8 +86,7 @@
 		transform: translateY(0);
 	}
 }
-/* #121212 rgb is */
-/* fades background between divs */
+
 .bg-blue-800-2 {
 	background-image: linear-gradient(to bottom, rgba(18,18,18,1), rgba(0,0,0,0));
 	background-size: cover;
@@ -91,7 +97,36 @@
 	background-size: cover;
 	background-position: center;
 }
-/* fades from 0,0,0 */
+
+
+#top{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+	
+
+}
+
+
+#icons {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+
+
+
+
+}
+
+#icons img {
+	width: 10vh;
+	padding: 1vh;
+}
 
 
 
