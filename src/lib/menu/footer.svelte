@@ -6,16 +6,16 @@
 				><img
 					src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/github.svg"
 					alt="GitHub"
-					width="25px"
-					height="25px"
+					width="48px"
+					height="48px"
 				/></a
 			>
 			<a href="https://www.linkedin.com/in/brendenferguson/"  rel="noreferrer" target="_blank" class="text-white"
 				><img
 					src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/linkedin.svg"
 					alt="LinkedIn"
-					width="25px"
-					height="25px"
+					width="48px"
+					height="48px"
 				/></a
 			>
 
