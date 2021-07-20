@@ -15,4 +15,4 @@
 
 <MenuPanel {items}/>
 
-<p class="text-white text-center m-5 text-xs">Blog posts licensed under  <a target="_blank" class="underline" href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License.</a></p>
+<p class="text-white text-center m-5 text-xs">Blog posts licensed under  <a target="_blank" rel="noreferrer" class="underline" href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 International License.</a></p>

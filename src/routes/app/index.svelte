@@ -15,4 +15,4 @@
 
 <MenuPanel {items}/>
 
-<p class="text-white text-center text-xs m-5">Code licensed under <a target="_blank" class="underline" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></p>
+<p class="text-white text-center text-xs m-5">Code licensed under <a target="_blank" class="underline" rel="noreferrer" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a></p>
