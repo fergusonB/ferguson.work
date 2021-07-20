@@ -16,6 +16,14 @@
 	export let path
 </script>
 
+<noscript>
+	<div id="noscript">
+		<p>This website was built with heavy use of javascript and is not intended to be viewed with it off.
+			<br>
+			I do not collect any information about you or your visit.
+		</p>
+	</div>
+</noscript>
 
 <div class="z-10">
 	<Menu />
@@ -58,5 +66,15 @@
 		to {
 			transform: rotate(-360deg);
 		}
+	}
+
+	#noscript{
+		color: #fff;
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+		padding: 1em;
+		margin: 0;
+		width: 100%;
 	}
 </style>
