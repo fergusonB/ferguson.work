@@ -28,6 +28,7 @@ function scroll100VHdown() {
 
 <svelte:head>
 	<title>Home</title>
+	<meta name="description" content="Brenden Ferguson's portfolio website with blog, applications, and contact information.">
 </svelte:head>
 
 
