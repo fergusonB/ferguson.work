@@ -6,7 +6,20 @@ onMount(() => {
 	document.getElementById('top').onclick = function() {
 	window.scrollTo(0,0);
 	}
+
 })
+
+
+function scroll100VHdown() {
+	var windowHeight = window.innerHeight;
+	window.scrollTo({
+		top: windowHeight,
+		left: 0,
+		behavior: 'smooth'
+		
+	});
+}
+
 
 
 
@@ -21,7 +34,7 @@ onMount(() => {
 
 <div class="text-4xl text-center text-white h-screen">
 	<div class="my-24" id="name"> Brenden Ferguson</div>
-	<div id="landing-bounce">V</div>
+	<button on:click={scroll100VHdown} id="landing-bounce">V</button>
 </div>
 
 
