@@ -8,7 +8,7 @@
 {#each path as item,i}
     
 
-    <a href={'/' +path.slice(0,i+1).join('/')}>{item.toUpperCase()}</a>
+    <a href={'/' +path.slice(0,i+1).join('/')}>{item ? item.toUpperCase() : 'HOME'}</a>
    
    
  
