@@ -19,7 +19,7 @@
 {#each contactInfo as contact}
     <a target="_blank" href={contact.link}>
 
-         <img class="w-11/12 m-auto my-3 p-3 rounded-lg drop-shadow-md bg-white  transition-scale duration-200 hover:scale-105" src={contact.logo} alt={contact.place}> 
+         <img class="w-11/12 m-auto my-3 p-3 rounded-lg drop-shadow-md bg-white  transition-scale duration-200 hover:scale-105 max-w-xl" src={contact.logo} alt={contact.place}> 
 
     </a> 
 {/each}
