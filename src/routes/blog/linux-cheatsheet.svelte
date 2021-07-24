@@ -3,7 +3,6 @@
 
 	const title = 'Linux Cheatsheet';
 	const description = 'Personal linux cheatsheet, basic security, commands, tools I like.';
-	//today's date
 	const date = 'July 16, 2021';
 
 </script>
@@ -77,7 +76,7 @@
 			<li>reboot</li>
 		</ul>
 
-		<h2 id="useful-commands" class="text-3xl">Useful Commands</h2>
+		<h2 id="useful-commands" class="text-3xl">Check Server</h2>
 
 		<h3 class="text-xl my-2">Service Scanning</h3>
 		<table class="table-auto ">
@@ -100,10 +99,7 @@
 					<td>nmap -sV -sC -p- [ip] </td>
 					<td>run full port, service, version scan</td>
 				</tr>
-				<tr>
-					<td>smbclient -N -L \\\\<ip /></td>
-					<td>List SMB Shares</td>
-				</tr>
+
 			</tbody>
 		</table>
 
@@ -146,14 +142,13 @@
 		</h3>
 		<p>Ripgrep is a fast, efficient, and accurate grep alternative.</p>
 		<p>
-			<!-- bat -->
+
 		</p>
 		<h3 class="text-xl my-2">
 			<a href="https://github.com/sharkdp/bat" target="_blank" rel="nofollow">Bat</a>
 		</h3>
 		<p>Cat clone with syntax highlighting</p>
 
-		<!-- https://github.com/chubin/cheat.sh-->
 		<h3 class="text-xl my-2">
 			<a href="https://github.com/chubin/cheat.sh" target="_blank" rel="nofollow">Cheat.sh</a>
 		</h3>
