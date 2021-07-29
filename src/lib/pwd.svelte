@@ -4,7 +4,7 @@
 
 
 </script>
-<div class="m-2 rounded-md bg-white bg-opacity-50 p-1 inline-block">
+<div id="pwd" class="m-2 rounded-md bg-white bg-opacity-50 p-1 inline-block">
 {#each path as item,i}
     
 
@@ -17,3 +17,13 @@
      {/if}
 {/each}
 </div>
+
+<style>
+    #pwd{
+        border: 1px solid #fff;
+        color: #fff;
+        /* drop shadow on text */
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+    }
+    </style>
+    

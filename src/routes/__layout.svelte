@@ -14,6 +14,9 @@
 	import Footer from '$lib/menu/footer.svelte'
 
 	export let path
+
+
+
 </script>
 
 <noscript>

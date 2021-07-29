@@ -15,3 +15,14 @@
          <Button {button} /> 
     {/each}
 </nav>
+
+<style>
+    nav{
+        border-bottom: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        color:white;
+        /* text shadow */
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 1);
+    }
+</style>

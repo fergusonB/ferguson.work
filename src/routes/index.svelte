@@ -1,6 +1,7 @@
 <script>
 
 import {onMount} from 'svelte'
+import Headline from '$lib/home/headline.svelte'
 
 onMount(() => {
 	document.getElementById('top').onclick = function() {
@@ -34,7 +35,7 @@ function scroll100VHdown() {
 
 
 <div class="text-4xl text-center text-white h-screen">
-	<div class="my-24" id="name"> Brenden Ferguson</div>
+	<Headline/>
 	<button on:click={scroll100VHdown} id="landing-bounce">V</button>
 </div>
 
