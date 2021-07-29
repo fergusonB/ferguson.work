@@ -10,17 +10,18 @@
 
 		
 
-		<link rel="modulepreload" href="/./_app/start-45db5fb5.js">
+		<link rel="modulepreload" href="/./_app/start-bff6a0f2.js">
 		<link rel="modulepreload" href="/./_app/chunks/vendor-d8fbfa43.js">
-		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-34bf1a52.js">
-		<link rel="modulepreload" href="/./_app/pages/blog/linux-cheatsheet.svelte-80e98ba2.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-dc8f9e76.js">
+		<link rel="modulepreload" href="/./_app/pages/blog/linux-cheatsheet.svelte-196f7fbc.js">
 		<link rel="modulepreload" href="/./_app/chunks/rear-white-panel-60d9f29a.js">
 		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
-		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-6d45ecd2.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-90c086e8.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/blog/linux-cheatsheet.svelte-5309b287.css">
 		<link rel="stylesheet" href="/./_app/assets/rear-white-panel-bf2fb256.css">
 
 		<script type="module">
-			import { start } from "/./_app/start-45db5fb5.js";
+			import { start } from "/./_app/start-bff6a0f2.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":"/."},
@@ -33,8 +34,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/./_app/pages/__layout.svelte-34bf1a52.js"),
-						import("/./_app/pages/blog/linux-cheatsheet.svelte-80e98ba2.js")
+						import("/./_app/pages/__layout.svelte-dc8f9e76.js"),
+						import("/./_app/pages/blog/linux-cheatsheet.svelte-196f7fbc.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -75,45 +76,48 @@ Contact</span>
 
 	<div>
 
-<div id="rear-white-panel" class="p-3  m-auto rounded-md bg-white w-11/12 md:w-2/3 bg-opacity-70   svelte-rxsg78"><article class="ml-3"><h1 class="text-4xl underline mb-5">Linux Cheatsheet</h1>
+
+
+
+<div id="rear-white-panel" class="p-3  m-auto rounded-md bg-white w-11/12 md:w-2/3 bg-opacity-70   svelte-rxsg78"><article class="svelte-18bcs6l"><h1 class="svelte-18bcs6l">Linux Cheatsheet</h1>
 
 
 <p class="text-sm text-gray-700">July 16, 2021</p>
 
-        <h2 class="text-3xl my-2">Table of Contents</h2>
-            <ol class="list-decimal ml-5 underline"><li><a href="#basic-security">Basic Security</a></li>
-                <li><a href="#useful-commands">Useful Commands</a></li>
-                <li><a href="#tools-i-like">Tools I Like</a></li></ol>
+        <h2 class="svelte-18bcs6l">Table of Contents</h2>
+            <ol class="svelte-18bcs6l"><li><a href="#basic-security" class="svelte-18bcs6l">Basic Security</a></li>
+                <li><a href="#useful-commands" class="svelte-18bcs6l">Useful Commands</a></li>
+                <li><a href="#tools-i-like" class="svelte-18bcs6l">Tools I Like</a></li></ol>
 
 
 
 
-<h2 id="basic-security" class="text-3xl my-2">Basic Security</h2>
+<h2 id="basic-security" class="svelte-18bcs6l">Basic Security</h2>
 
-<h3 class="text-xl my-2">Automatic Updates</h3>
+<h3 class="svelte-18bcs6l">Automatic Updates</h3>
 
-<ul class="list-disc list-inside ml-2"><li>apt install unattended-upgrades</li>
+<ul class="svelte-18bcs6l"><li>apt install unattended-upgrades</li>
 	<li>dpkg-reconfigure --priority=low unattended-upgrades</li></ul>
-<h3 class="text-xl my-2">Non-root user</h3>
+<h3 class="svelte-18bcs6l">Non-root user</h3>
 
-<ul class="list-disc list-inside ml-2"><li>adduser [user]</li>
+<ul class="svelte-18bcs6l"><li>adduser [user]</li>
 	<li>usermod -aG sudo [user]</li></ul>
-<h3 class="text-xl my-2">Keys</h3>
+<h3 class="svelte-18bcs6l">Keys</h3>
 
-<ul class="list-disc list-inside ml-2"><li>mkdir ~/.ssh</li>
+<ul class="svelte-18bcs6l"><li>mkdir ~/.ssh</li>
 	<li>chmod 700 ~/.ssh</li>
 	<li>ssh-keygen -b [4096]</li>
 	<li>ssh-copy-id [user]@[ip]</li></ul>
-<h3 class="text-xl my-2">Harden SSH</h3>
+<h3 class="svelte-18bcs6l">Harden SSH</h3>
 
-<ul class="list-disc list-inside ml-2"><li>sudo nano /etc/ssh/sshd_config</li>
+<ul class="svelte-18bcs6l"><li>sudo nano /etc/ssh/sshd_config</li>
 	<li>Port [22]</li>
 	<li>AddressFamily [inet]</li>
 	<li>PermitRootLogin [no]</li>
 	<li>PasswordAuthentication [no]</li></ul>
-<h3 class="text-xl my-2">Firewall</h3>
+<h3 class="svelte-18bcs6l">Firewall</h3>
 
-<ul class="list-disc list-inside ml-2"><li>sudo apt install ufw</li>
+<ul class="svelte-18bcs6l"><li>sudo apt install ufw</li>
 	<li>sudo ufw allow [port]</li>
 	<li>sudo ufw enable</li>
 	<li>sudo ufw status</li>
@@ -122,43 +126,43 @@ Contact</span>
 	<li>-A ufw-before-input -p icmp --icmp-type echo-request -j DROP</li>
 	<li>reboot</li></ul>
 
-<h2 id="useful-commands" class="text-3xl">Check Server</h2>
+<h2 id="useful-commands" class="svelte-18bcs6l">Check Server</h2>
 
-<h3 class="text-xl my-2">Service Scanning</h3>
-<table class="table-auto "><thead><tr><th>Command</th>
-			<th>Description</th></tr></thead>
-	<tbody><tr><td>nmap [ip] </td>
+<h3 class="svelte-18bcs6l">Service Scanning</h3>
+<table class="svelte-18bcs6l"><thead><tr class="svelte-18bcs6l"><th class="svelte-18bcs6l">Command</th>
+			<th class="svelte-18bcs6l">Description</th></tr></thead>
+	<tbody><tr class="svelte-18bcs6l"><td>nmap [ip] </td>
 			<td>run nmap</td></tr>
-		<tr><td>netcat [ip] [port] </td>
+		<tr class="svelte-18bcs6l"><td>netcat [ip] [port] </td>
 			<td>get banner of open port</td></tr>
-		<tr><td>nmap -sV -sC -p- [ip] </td>
+		<tr class="svelte-18bcs6l"><td>nmap -sV -sC -p- [ip] </td>
 			<td>run full port, service, version scan</td></tr></tbody></table>
 
-<h3 class="text-xl my-2">Web Enumeration (parrot)</h3>
-<table class="table-auto"><thead><tr><th>Command</th>
-			<th>Description</th></tr></thead>
-	<tbody><tr><td>gobuster dir -u [ip] -w [list] </td>
+<h3 class="svelte-18bcs6l">Web Enumeration (parrot)</h3>
+<table class="svelte-18bcs6l"><thead><tr class="svelte-18bcs6l"><th class="svelte-18bcs6l">Command</th>
+			<th class="svelte-18bcs6l">Description</th></tr></thead>
+	<tbody><tr class="svelte-18bcs6l"><td>gobuster dir -u [ip] -w [list] </td>
 			<td>directory scan</td></tr>
-		<tr><td>gobuster dns -d [address]-w [list] </td>
+		<tr class="svelte-18bcs6l"><td>gobuster dns -d [address]-w [list] </td>
 			<td>subdomain scan</td></tr>
-		<tr><td>curl -IL [ip] </td>
+		<tr class="svelte-18bcs6l"><td>curl -IL [ip] </td>
 			<td>get website banner</td></tr>
-		<tr><td>curl [ip]/robots.txt </td>
+		<tr class="svelte-18bcs6l"><td>curl [ip]/robots.txt </td>
 			<td>potentially get some directories</td></tr></tbody></table>
 
-<h2 id="tools-i-like" class="text-3xl">Tools I Like</h2>
+<h2 id="tools-i-like" class="svelte-18bcs6l">Tools I Like</h2>
 
-<h3 class="text-xl my-2"><a href="http://httpie.org/" target="_blank" rel="nofollow">HTTPie</a></h3>
+<h3 class="svelte-18bcs6l"><a href="http://httpie.org/" target="_blank" rel="nofollow" class="svelte-18bcs6l">HTTPie</a></h3>
 
 <p>HTTPie is a command line HTTP client, a user-friendly cURL replacement.</p>
 <p></p>
-<h3 class="text-xl my-2"><a href="https://github.com/BurntSushi/ripgrep" target="_blank" rel="nofollow">Ripgrep</a></h3>
+<h3 class="svelte-18bcs6l"><a href="https://github.com/BurntSushi/ripgrep" target="_blank" rel="nofollow" class="svelte-18bcs6l">Ripgrep</a></h3>
 <p>Ripgrep is a fast, efficient, and accurate grep alternative.</p>
 <p></p>
-<h3 class="text-xl my-2"><a href="https://github.com/sharkdp/bat" target="_blank" rel="nofollow">Bat</a></h3>
+<h3 class="svelte-18bcs6l"><a href="https://github.com/sharkdp/bat" target="_blank" rel="nofollow" class="svelte-18bcs6l">Bat</a></h3>
 <p>Cat clone with syntax highlighting</p>
 
-<h3 class="text-xl my-2"><a href="https://github.com/chubin/cheat.sh" target="_blank" rel="nofollow">Cheat.sh</a></h3>
+<h3 class="svelte-18bcs6l"><a href="https://github.com/chubin/cheat.sh" target="_blank" rel="nofollow" class="svelte-18bcs6l">Cheat.sh</a></h3>
 <p><code>curl cht.sh</code> for cheatsheets to almost anything in your terminal.</p></article>
 
 </div></div>
