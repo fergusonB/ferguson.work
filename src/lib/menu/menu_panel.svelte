@@ -21,7 +21,7 @@
 			>
 				<div class="font-bold">{item.title}</div>
 				<img class=" m-auto max-h-24" src={item.image} alt={item.title + ' ' + item.description} />
-				<span class="overflow-hidden">{item.description}</span>
+				<span class="overflow-hidden p-1">{item.description}</span>
 			</div>
 		</a>
 	{/each}
