@@ -157,34 +157,6 @@ tr:nth-child(even){
 			</tbody>
 		</table>
 
-		<h3 >Web Enumeration (parrot)</h3>
-		<table >
-			<thead>
-				<tr>
-					<th>Command</th>
-					<th>Description</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>gobuster dir -u [ip] -w [list] </td>
-					<td>directory scan</td>
-				</tr>
-				<tr>
-					<td>gobuster dns -d [address]-w [list] </td>
-					<td>subdomain scan</td>
-				</tr>
-				<tr>
-					<td>curl -IL [ip] </td>
-					<td>get website banner</td>
-				</tr>
-				<tr>
-					<td>curl [ip]/robots.txt </td>
-					<td>potentially get some directories</td>
-				</tr>
-			</tbody>
-		</table>
-
 		<h2 id="tools-i-like">Tools I Like</h2>
 
 		<h3 ><a href="http://httpie.org/" target="_blank" rel="nofollow">HTTPie</a></h3>
