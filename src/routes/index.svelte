@@ -55,7 +55,7 @@ function scroll100VHdown() {
 	<div>
 		<img class="bg-white rounded-lg p-3" src="ferguson.png" alt="Ferguson enterprises">
 	</div>
-	<div class="p-3">
+	<div class="p-3 max-w-xl">
 		<h2>Three years experience in sales and account management at the largest plumbing wholesaler in the U.S.
 	</div>
 	
