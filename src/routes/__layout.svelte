@@ -28,7 +28,7 @@
 	</div>
 </noscript>
 
-<div class="z-10">
+<div id="container" class="z-10">
 	<Menu />
 
 	<PWD {path}></PWD>
@@ -41,7 +41,7 @@
 </div>
 <div class="stars z-0 fixed" />
 <style>
-	:global(html){
+	#container{
 		background-color:#121212;
 	}
 
