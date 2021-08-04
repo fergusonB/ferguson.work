@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-6dd9c4a5.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-d8fbfa43.js">
+		<link rel="modulepreload" href="/./_app/pages/resume/__layout.reset.svelte-db48486f.js">
+		<link rel="modulepreload" href="/./_app/pages/resume/index.svelte-196ac4d5.js">
+		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/resume/index.svelte-ef7aef12.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-6dd9c4a5.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/resume/__layout.reset.svelte-db48486f.js"),
+						import("/./_app/pages/resume/index.svelte-196ac4d5.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/resume",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div id="container" class="svelte-20xym1"><h1 class="svelte-20xym1">Résumé </h1>
+
+<button onclick="window.print()">Print</button>
+<h2 class="svelte-20xym1">Brenden Ferguson</h2></div>
+
+
+
+	
+</div>
+	</body>
+</html>
