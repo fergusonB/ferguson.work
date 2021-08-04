@@ -28,7 +28,7 @@
 	</div>
 </noscript>
 
-<div id="container" class="z-10">
+<div id="container" class="z-10 min-h-screen">
 	<Menu />
 
 	<PWD {path}></PWD>
@@ -46,6 +46,7 @@
 	}
 
 	.stars{
+
 		pointer-events: none;
 		width: 400vw;
 		height: 400vh;
