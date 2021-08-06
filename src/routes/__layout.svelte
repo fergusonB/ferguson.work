@@ -73,7 +73,6 @@
 	}
 
 	#noscript{
-		color: #fff;
 		font-size: 2em;
 		font-weight: bold;
 		text-align: center;

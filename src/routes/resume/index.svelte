@@ -11,7 +11,5 @@
     </style>
 <div id="container">
 <h1>Résumé </h1>
-<!-- print button -->
-<button onclick="window.print()">Print</button>
 <h2>Brenden Ferguson</h2>
 </div>
