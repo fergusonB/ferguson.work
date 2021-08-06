@@ -9,7 +9,7 @@
         @apply text-3xl;
     }
     </style>
-<div id="container">
+<div id="container"> 
 <h1>Résumé </h1>
 <h2>Brenden Ferguson</h2>
 </div>

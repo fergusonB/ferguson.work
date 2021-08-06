@@ -47,6 +47,7 @@ table{
 	@apply min-w-max;
 	@apply w-full;
 	@apply table-auto;
+	@apply overflow-x-auto;
 }
 tr{
 	@apply leading-normal;
