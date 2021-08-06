@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/fergusonb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ferguson.work
+  * I am fergusonb (https://keybase.io/fergusonb) on keybase.
+  * I have a public key ASDmZl6sIzRVyK_2fyKIeHAXQdac7lQLhDuXXR4Uz_s85Ao
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120e6665eac233455c8aff67f228878701741d69cee540b843b975d1e14cffb3ce40a",
+      "host": "keybase.io",
+      "kid": "0120e6665eac233455c8aff67f228878701741d69cee540b843b975d1e14cffb3ce40a",
+      "uid": "940a754c13fc0ff265a6203f2a2c2e19",
+      "username": "fergusonb"
+    },
+    "merkle_root": {
+      "ctime": 1628280324,
+      "hash": "c9b21f824d65a90784e185f1df0f5be50bfcecf076829c16bc1c920deaa2927b4d5ca61aad2474a89bd362c98fb04979dd5d0fc2dace7a67b2d41e6cb3980598",
+      "hash_meta": "430c7736d270f167757fa482ef4fa690373b84f915e3353812623fe5c6bff1ee",
+      "seqno": 20520080
+    },
+    "service": {
+      "entropy": "vQrHQ6ypje4fbxxgWgTjmRKH",
+      "hostname": "ferguson.work",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.7.1"
+  },
+  "ctime": 1628280388,
+  "expire_in": 504576000,
+  "prev": "0d462fce5e674834adc34235076b9f7e771b7567d04de3a7747f74ec345aa17b",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg5mZerCM0Vciv9n8iiHhwF0HWnO5UC4Q7l10eFM/7POQKp3BheWxvYWTESpcCB8QgDUYvzl5nSDStw0I1B2uffncbdWfQTeOndH907DRaoXvEIItbkOjqULnftibPMJRAkzUv95aKf1uv5JkB1+Noa7JWAgHCo3NpZ8RA53Kh7jqiQCK0AttE72wCQoBym4sg2TbvSqvg6KRyrqPYM+R580LcHuUuopk5cOTAfchfJCkZdWJpAPChI79yA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJv/BtQKdql4eqFu+gZpUn6ZeDtnR4awpFIHbvQtYJn6o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/fergusonb
+
+==================================================================
